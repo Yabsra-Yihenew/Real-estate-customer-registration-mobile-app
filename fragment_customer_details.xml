@@ -1,1 +1,117 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/iv_customer_image"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_customer_name"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="Customer Name"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_customer_image" />
+
+    <TextView
+        android:id="@+id/tv_customer_phone"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Phone"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_customer_name" />
+
+    <TextView
+        android:id="@+id/tv_customer_email"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Email"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_customer_phone" />
+
+    <Button
+        android:id="@+id/btn_email_customer"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="32dp"
+        android:background="#ffc107  "
+        android:text="Email"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_geneder" />
+
+    <Button
+        android:id="@+id/btn_call_customer"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="92dp"
+        android:background="#28a745"
+        android:text="Call"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toEndOf="@+id/btn_email_customer"
+        app:layout_constraintTop_toBottomOf="@+id/tv_geneder" />
+
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="110dp"
+        android:background="#007bff"
+        android:text="Edit"
+        android:textColor="@color/white"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/iv_customer_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="18dp"
+        android:background="#dc3545"
+        android:text="Delete"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_geneder"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/gender"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_customer_email" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
